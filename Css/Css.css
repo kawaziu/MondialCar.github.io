@@ -1,10 +1,56 @@
-.banier {
-	height: auto;
-	width: 100%;
+/*Barre nav*/
+.navbar {
+    background-color: black;
+	justify-content: space-between;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
+.navbarInfo {	
+    background-color: black;
+    padding: 15px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+	text-decoration: none;
+}
+
+.navbar .Logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+    color: red;
+    font-weight: 600;
+}
+.Logo{
+	width: 101px;
+	height: auto;
+}
+
+.IconInfo{
+	width: 25px;
+	height: auto;
+}
+
 body{
-	background-image: url("../@Ressource/Image/Boite/fon.png");
+	background-image: url("../@Ressource/Image/Boite/Fon.png");
 	background-repeat: no-repeat;
+	background-size: cover;
 	margin: 0;
 	padding: 0;
 }
@@ -24,9 +70,9 @@ body{
 	padding: 10px;
 	/*center le text et image*/
 	text-align: center;
-	/*rajoute les bord Gris noir*/
-	border-left: 10px solid #838383;
-	border-right: 10px solid #838383;
+	/*rajoute les bord Gris noir (rgba= rouge, vert, bleu, opacité)*/
+	border-left: 10px solid rgba(0,0,0,0.03);
+	border-right: 10px solid rgba(0,0,0,0.03);
 }
 
 /*titre des voiture dans les content*/
